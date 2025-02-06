@@ -5,4 +5,6 @@ runtime/
 test/*.tokens
 test/*.tree.gv
 
+container.sh
+
 evan_newman_cs8803_project.zip
