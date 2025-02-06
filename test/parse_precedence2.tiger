@@ -1,0 +1,13 @@
+/* Parse test: precedence of power operator */
+
+program parse_precedence2
+let
+    static a: int;
+begin
+
+    function main()
+    begin
+        a := 1 + 2 - 3 ** 4 ** 5 * 6 / 7;
+    end
+
+end

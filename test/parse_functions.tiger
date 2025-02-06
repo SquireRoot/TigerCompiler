@@ -1,0 +1,27 @@
+/* Parse test: function calls */
+
+program parse_functions
+let
+begin
+
+    function test_procedure()
+    begin
+        return;
+    end
+
+    function test_function(a : int, b : int, c : int) : int
+    begin
+        return a + b + c;
+    end
+
+    function main()
+    begin
+        let
+            var a : int;
+        begin
+            test_procedure();
+            a := test_function(1, 2, 3);
+        end
+    end
+
+end

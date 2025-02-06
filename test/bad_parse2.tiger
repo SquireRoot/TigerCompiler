@@ -1,0 +1,14 @@
+/* Parser error: misplaced let */
+
+program bad_parse2
+let
+begin
+
+    function main()
+    let
+        var a : int := 1;
+    begin
+        return;
+    end
+
+end

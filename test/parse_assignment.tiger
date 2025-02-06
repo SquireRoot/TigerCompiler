@@ -1,0 +1,22 @@
+/* Parse test: assignment and type */
+
+program parse_assignment
+let
+    type myInt = int;
+    static a: int;
+    static b: myInt := 1;
+begin
+
+    function main()
+    begin
+        let
+            type myInt2 = int;
+            var c : int;
+            var d : myInt2 := 2;
+        begin
+            a := 1;
+            c := 2;
+        end
+    end
+
+end

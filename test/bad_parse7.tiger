@@ -1,0 +1,17 @@
+/* Parser error: function call expression */
+
+program bad_parse7
+let
+begin
+
+    function a() : int
+    begin
+        return 0;
+    end
+
+    function main()
+    begin
+        a := 5 / a();
+    end
+
+end

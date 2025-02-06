@@ -1,0 +1,13 @@
+/* Parser error: unary minus */
+
+program bad_parse8
+let
+    static a : int;
+begin
+
+    function main()
+    begin
+        a := -5;
+    end
+
+end

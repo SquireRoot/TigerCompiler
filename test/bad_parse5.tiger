@@ -1,0 +1,19 @@
+/* Parser error: malformed if-else */
+
+program bad_parse5
+let
+    static a : int;
+begin
+
+    function main()
+    begin
+        if (1 < 0) then
+            a := 0;
+        else if (1 == 0) then
+            a := 1;
+        else
+            a := 2;
+        endif;
+    end
+
+end

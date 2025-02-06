@@ -1,0 +1,8 @@
+/* Scanner test: ids */
+
+program scan_ids
+let
+    static the, quick, brown, fox, jumped, over, the, lazy, dog, a123, a_1_2_3_ : int;
+begin
+
+end

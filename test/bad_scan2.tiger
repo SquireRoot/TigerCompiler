@@ -1,0 +1,12 @@
+/* Scanner error: invalid symbol starts with _ */
+
+program bad_scan2
+let
+begin
+
+    function __main__()
+    begin
+        return;
+    end
+
+end

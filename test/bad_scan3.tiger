@@ -1,0 +1,13 @@
+/* Scanner error: invalid symbol - ε */
+
+program bad_scan3
+let
+    static sizε : int;
+begin
+
+    function main()
+    begin
+        return;
+    end
+
+end

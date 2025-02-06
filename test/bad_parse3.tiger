@@ -1,0 +1,11 @@
+/* Parser error: function without statements */
+
+program bad_parse3
+let
+begin
+
+    function main()
+    begin
+    end
+
+end

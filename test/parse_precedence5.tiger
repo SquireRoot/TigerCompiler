@@ -1,0 +1,13 @@
+/* Parse test: precedence of parenthesis */
+
+program parse_precedence5
+let
+    static a: int;
+begin
+
+    function main()
+    begin
+        a := (((1 * 2) ** 2) ** 3);
+    end
+
+end

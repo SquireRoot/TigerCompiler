@@ -1,0 +1,13 @@
+/* Scan error: float with no leading digit */
+
+program bad_scan4
+let
+    static a : float;
+begin
+
+    function main()
+    begin
+        a := .123;
+    end
+
+end

@@ -1,0 +1,13 @@
+/* Parser error: trailing tokens */
+
+program bad_parse4
+let
+begin
+
+    function main()
+    begin
+        return;
+    end
+
+end
+end

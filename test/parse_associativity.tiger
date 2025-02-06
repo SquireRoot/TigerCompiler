@@ -1,0 +1,19 @@
+/* Parser test: associativity */
+
+program parse_associativity
+let
+    static a : int;
+begin
+
+    function main()
+    begin
+        a := 1 + 2 + 3;
+        a := 1 - 2 - 3;
+        a := 1 * 2 * 3;
+        a := 1 / 2 / 3;
+        a := 1 ** 2 ** 3;
+        a := 1 | 2 | 3;
+        a := 1 & 2 & 3;
+    end
+
+end

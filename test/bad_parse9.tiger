@@ -1,0 +1,13 @@
+/* Parser error: float with leading zeros */
+
+program bad_parse9
+let
+    static a : float;
+begin
+
+    function main()
+    begin
+        a := 00.123;
+    end
+
+end

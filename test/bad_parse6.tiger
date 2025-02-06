@@ -1,0 +1,10 @@
+/* Parser error: missing end */
+
+program bad_parse6
+let
+begin
+
+    function main()
+    begin
+        return;
+    end

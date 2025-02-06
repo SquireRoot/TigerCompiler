@@ -1,0 +1,15 @@
+/* Parse test: precedence of logical ops */
+
+program parse_precedence3
+let
+    static a: int;
+begin
+
+    function main()
+    begin
+        a := 1 & 2 | 3;
+        a := 1 | 2 & 3;
+        a := 1 + 2 | 3 & 4 + 5;
+    end
+
+end

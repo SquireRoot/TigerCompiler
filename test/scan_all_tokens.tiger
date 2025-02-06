@@ -1,0 +1,30 @@
+/* Scanner test: all tokens - not including float */
+
+program scan_all_tokens
+let
+    static a, b: int := 1;
+begin
+
+    function main()
+    begin
+        let
+            type intArray = array[10] of int;
+            var c : intArray;
+        begin
+            a := a + a - a * a / a ** a;
+            b := (b == 1) | (b != 2) | (b > 3) | (b < 4) & (b >= 5) & (b <= 6);
+
+            if a then
+                for a := 1 to 10 do
+                    break;
+                enddo;
+            else
+                while a do
+                    break;
+                enddo;
+            endif;
+
+        end
+    end
+
+end

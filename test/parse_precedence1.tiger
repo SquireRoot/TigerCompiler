@@ -1,0 +1,20 @@
+/* Parse test: precedence of add-sub mult-div */
+
+program parse_precedence1
+let
+    static a: int;
+begin
+
+    function main()
+    begin
+        a := 1 - 2 + 3;
+        a := 1 + 2 - 3;
+
+        a := 1 / 2 * 3;
+        a := 1 * 2 / 3;
+
+        a := 1 * 2 + 3;
+        a := 1 + 2 * 3;
+    end
+
+end

@@ -1,0 +1,13 @@
+/* Parser error: invalid name starting with number */
+
+program bad_parse1
+let
+    static 0name : int;
+begin
+
+    function main()
+    begin
+        return;
+    end
+
+end

@@ -1,0 +1,32 @@
+/* Parse test: loop and conditional statements */
+
+program parse_statements
+let
+begin
+
+    function main()
+    begin
+        let
+            var a : int := 1;
+        begin
+            if (a < 2) then
+                a := a + 1;
+            endif;
+
+            if (a != 2) then
+                a := 1;
+            else
+                a := 2;
+            endif;
+
+            for a := 1 to 10 do
+                a := a + 1;
+            enddo;
+
+            while (a > 0) do
+                break;
+            enddo;
+        end
+    end
+
+end
